@@ -120,12 +120,6 @@ public class Simple {
     }
 
 
-    /**
-     * The auxiliary method to help with the evaluation of mathematical operators, typically deletes two elements off of the
-     * operands stack and one off of the operator stack, unless the operator is the factorial symbol, in which case only one
-     * operand needs to be popped off of the stack. This method also will add one double value onto the global operand stack,
-     * this will be the calculated problem. needs to explain what it does not how it works
-     */
     private void processExp(LinkedList operands, LinkedList operators) {
 
         String operator = (String) operators.removeFirst();
@@ -167,8 +161,6 @@ public class Simple {
     }
 
 
-    //Auxiliary method for the processExp method, for finding the factorial, doesn't need to be a double
-    //needs to handle negatives
     private int factorial(int n) {
         if (n == 0) {
             return 1;
